@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | Bootstrap</title>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="/css/main.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
+ 
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-xxl">
+        <a href="intro" class="navbar-brand">
+          <i class="bi bi-book-half"></i>
+          <span class="fw-bold text-secondary"> Net Ninja Pro -the Book </span>
+        </a>
+
+        <!-- toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 
+    navbar links -->
+
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#topics" class="nav-link">About The Book</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Get In Touch</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a href="#topics" class="btn btn-secondary">buy now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main image & intro text -->
+    <section id="intro">
+      <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2">Black-Belt</div>
+              <div class="display-5 text-muted">Your coding Skills</div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+
+            <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+
+            <!-- open side /offcanvas -->
+            <a
+              href="#sidebar"
+              class="d-block mt-3"
+              data-bs-toggle="offcanvas"
+              role="button"
+              aria-controls="sidebar"
+              >Explore my other books</a
+            >
+          </div>
+          <div class="col-md-5 text-center d-none d-md-block">
+            <!-- tooltip -->
+            <span
+              class="tt"
+              data-bs-placement="bottom"
+              title="Net Ninja Book Cover "
+            >
+              <img
+                class="img-fluid"
+                src="/assets/ebook-cover.png"
+                alt=""
+                srcset=""
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing plans -->
+    <section id="pricing" class="bg-light mt-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Pricings Plans</h2>
+          <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Starter Edition</h4>
+                <p class="lead card-subtitle">eBook download only</p>
+                <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-9 col-lg-4">
+            <div class="card border-primary border-2">
+              <div class="card-header text-center text-primary">
+                Most Popular
+              </div>
+              <div class="card-body text-center py-5">
+                <h4 class="card-title">Complete Edition</h4>
+                <p class="lead card-subtitle">eBook download only</p>
+                <p class="display-4 my-4 text-primary fw-bold">$18.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Starter Edition</h4>
+                <p class="lead card-subtitle">eBook download only</p>
+                <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3"
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- topics at a glance -->
+    <section id="topics">
+      <div class="container-md">
+        <div class="text-center">
+          <h2>Inside the Book ...</h2>
+          <p class="lead text-muted">Aquick glance at topics you'all learn</p>
+        </div>
+
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+          <div class="col-6 col-lg-4">
+            <img src="assets/kindle.png" class="img-fluid" alt="" srcset="" />
+          </div>
+
+          <div class="col-lg-6">
+            <!-- accordion -->
+            <div class="accordion" id="chapters">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-1"
+                    aria-expanded="true"
+                    aria-controls="chapter-1"
+                  >
+                    Chapter 1 - Your First Web Page
+                  </button>
+                </h2>
+                <div
+                  id="chapter-1"
+                  class="accordion-collapse collapse show aria-labelledby heading-1"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laboriosam voluptates provident deleniti nisi mollitia
+                      placeat repellat cupiditate blanditiis perspiciatis. A
+                      temporibus, error odit obcaecati quibusdam praesentium
+                      ducimus iste quas doloremque.
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sunt ut id velit dolores repudiandae dolor corporis,
+                      explicabo voluptatem officiis molestiae eveniet beatae
+                      illum cupiditate architecto animi maiores magnam earum
+                      atque.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-2"
+                    aria-expanded="false"
+                    aria-controls="chapter-2"
+                  >
+                    Chapter 2 - The Power of Javascript
+                  </button>
+                </h2>
+                <div
+                  id="chapter-2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-2"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Qui, eius repellendus. Saepe optio quos amet explicabo.
+                      Optio molestias maxime est doloribus, consequatur deserunt
+                      minus sit numquam error voluptas expedita esse?
+                    </p>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Quos, quaerat voluptatum accusantium sit ea eum vel id
+                      eveniet? Porro, earum veritatis harum mollitia vel
+                      quisquam repellendus voluptatum sit beatae repellat!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews list -->
+    <section id="reviews" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2><i class="bi bi-stars"></i>Book Reviews</h2>
+          <p class="lead">What my students have said about the book...</p>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                <p class="mb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  consectetur reprehenderit mollitia laborum tempora aperiam vel
+                  architecto delectus, pariatur illum veniam cum, sit, non sint.
+                  Ullam dolore sequi nesciunt cupiditate?
+                </p>
+                <small>Review by Mario</small>
+              </div>
+
+              <div class="list-group-item py3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                <p class="mb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  consectetur reprehenderit mollitia laborum tempora aperiam vel
+                  architecto delectus, pariatur illum veniam cum, sit, non sint.
+                  Ullam dolore sequi nesciunt cupiditate?
+                </p>
+                <small>Review by Mario</small>
+              </div>
+
+              <div class="list-group-item py3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                <p class="mb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  consectetur reprehenderit mollitia laborum tempora aperiam vel
+                  architecto delectus, pariatur illum veniam cum, sit, non sint.
+                  Ullam dolore sequi nesciunt cupiditate?
+                </p>
+                <small>Review by Mario</small>
+              </div>
+              <div class="list-group-item py3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                <p class="mb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  consectetur reprehenderit mollitia laborum tempora aperiam vel
+                  architecto delectus, pariatur illum veniam cum, sit, non sint.
+                  Ullam dolore sequi nesciunt cupiditate?
+                </p>
+                <small>Review by Mario</small>
+              </div>
+              <div class="list-group-item py3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                <p class="mb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  consectetur reprehenderit mollitia laborum tempora aperiam vel
+                  architecto delectus, pariatur illum veniam cum, sit, non sint.
+                  Ullam dolore sequi nesciunt cupiditate?
+                </p>
+                <small>Review by Mario</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <!-- form-control, form-label, form-select , input-group, input-group-text -->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="container-lg">
+          <div class="text-center">
+            <h2>Get In Touch</h2>
+            <p class="lead">
+              Questions to ask? Fill out the form to contact me directly
+            </p>
+          </div>
+          <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+              <form>
+                <label for="email" class="form-label">Email address:</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill"></i>
+                  </span>
+
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="e.g. djanatiuwase@gmail.com"
+                  />
+
+                  <!-- tooltip -->
+                  <span class="input-group-text">
+                    <span
+                      class="tt"
+                      data-bs-placement="bottom"
+                      title="Enter Your Email"
+                    >
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
+                </div>
+
+                <label for="name" class="form-label">Name:</label>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="e.g. Djanati"
+                  />
+
+                  <!-- tooltip -->
+                  <span class="input-group-text">
+                    <span
+                      class="tt"
+                      data-bs-placement="bottom"
+                      title="pretty Self explanatory really"
+                    >
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
+                </div>
+
+                <label for="subject" class="form-label"
+                  >What is your question about?
+                </label>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-chat-dots-fill"></i>
+                  </span>
+                  <select class="form-select" id="subject">
+                    <option value="pricing" selected>Pricing query</option>
+                    <option value="content">Content query</option>
+                    <option value="other">Other query</option>
+                  </select>
+                </div>
+
+                <div class="form-floating mb-4 mt-5">
+                  <textarea
+                    id=""
+                    class="form-control"
+                    style="height: 140px"
+                  ></textarea>
+                  <label for="query" class="form-label">Your query....</label>
+                </div>
+                <div class="mb-4 text-center">
+                  <button type="submit" class="btn btn-secondary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- get updates /modaltrigger -->
+    <section class="bg-light">
+      <div class="container my-5">
+        <div class="text-center">
+          <h2>Stay in The Loop</h2>
+          <p class="lead">Get the latest updates as they happen...</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-muted my-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+              maxime alias, ipsam dicta beatae sed nesciunt iusto eos id nemo
+              perspiciatis doloremque rem veniam voluptatum quidem dolorem
+              dolore magni sapiente! Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Maxime sequi ab sint nostrum necessitatibus,
+              voluptatem natus minus dignissimos repellat, in aperiam laudantium
+              est quod eligendi magnam quae tempora numquam doloremque!
+            </p>
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#reg-modal"
+            >
+              Register for Updates
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal itself -->
+    <div
+      class="modal fade"
+      id="reg-modal"
+      tabindex="-1"
+      aria-labelledby="moadal-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+              alias labore at eos eius nobis, aperiam beatae vel, suscipit
+              eligendi explicabo blanditiis optio quae ipsum ab ad! Id, expedita
+              incidunt!
+            </p>
+            <label for="modal-email" class="form-label"
+              >Your email address:</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="modal-email"
+              placeholder="e.g.djanati@example.com"
+            />
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar-label"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+          incidunt assumenda quas sed, molestiae cumque. Nisi ratione, magnam vero
+          minus corrupti cumque sapiente tempore aspernatur ea aperiam numquam?
+          Labore, perspiciatis.
+        </p>
+        <!-- dropdown -->
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+            Choose a book title
+          </button>
+<ul class="dropdown-menu" aria-labelledby="book-dropdown">
+  <li><a href="#" class="dropdown-item">Become a React Superhero </a></li>
+  <li><a href="#" class="dropdown-item">Become a React Superhero </a></li>
+  <li><a href="#" class="dropdown-item">Become a React Superhero </a></li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+   
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
+  </body>
+</html>
